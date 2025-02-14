@@ -1,0 +1,52 @@
+###
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Java Peshqadam",
+  "author": "Joshua Bloch",
+  "year": 2020
+}
+
+###
+GET http://localhost:8080/books
+
+###
+GET http://localhost:8080/books/1
+
+###
+PUT http://localhost:8080/books/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Effective Java",
+  "author": "Joshua Bloch",
+  "year": 2021
+}
+
+###
+DELETE http://localhost:8080/books/1
+
+###
+GET http://localhost:8080/books/search?title=Java
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Nazarbek",
+  "email": "nazarbek@example.com"
+}
+
+###
+GET http://localhost:8080/users
+
+###
+GET http://localhost:8080/users/1
+
+###
+DELETE http://localhost:8080/users/1
